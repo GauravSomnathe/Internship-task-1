@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./images/style.css">
+</head>
+<body>
+    <button id="toggleMode">Toggle Dark Mode</button>
+    
+    <div class="stopwatch">
+        <h1 id="displayTime">00:00:00</h1>
+        <div class="button">
+            <img src="./images/pause.png" alt="" onclick="watchstop()">
+            <img src="./images/play.png" alt="" onclick="watchstart()">
+            <img src="./images/refresh.png" alt="" onclick="watchReset()">
+        </div>
+    </div>
+
+    <script>
+        let [seconds , minutes, hours] =[0, 0, 0]
+        let displayTime = document.getElementById("displayTime")
+        let timer =null;
+
+
+        function stopwatch(){
+            seconds++;
+            if(seconds == 60){
+                seconds =0;
+                minutes++;
+                if(minutes == 60){
+                    minutes = 0;
+                    hours++;
+                }
+            }
+
+            let h = hours < 10 ? "0" + hours : hours;
+            let m = minutes < 10 ? "0" + minutes : minutes;
+            let s = seconds < 10 ? "0" + seconds : seconds;
+
+
+            displayTime.innerHTML = h +":" + m+ ":" + s;
+
+        }
+        function watchstart(){
+            if(timer!=null){
+                clearInterval(timer)
+            }
+           timer= setInterval(stopwatch,1000);
+        }
+
+        function watchstop(){
+            clearInterval(timer)
+        }
+
+        function watchReset(){
+            clearInterval(timer);
+            [seconds , minutes, hours] =[0, 0, 0]
+            displayTime.innerHTML = "00:00:00"
+
+        }
+
+        const toggleBtn = document.getElementById("toggleMode");
+        toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+       });
+    </script>
+</body>
+</html>
