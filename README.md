@@ -12,4 +12,4 @@ A simple, responsive stopwatch web application built with **HTML**, **CSS**, and
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript 
