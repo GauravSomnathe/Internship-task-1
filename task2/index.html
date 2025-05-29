@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gaurav Somnathe | Full Stack Developer & Fitness Creator</title>
+    <meta name="description" content="Gaurav Somnathe – Full Stack MERN Developer, passionate about building scalable web applications and empowering the dev community. Also a fitness creator & speaker.">
+    <meta name="keywords" content="Gaurav Somnathe, MERN Stack, Full Stack Developer, Web Development, JavaScript, React, Node.js, Express, MongoDB, Fitness Creator, Mentor, Speaker, India">
+    <meta name="author" content="Gaurav Somnathe">
+
+    <link rel="icon" href="https://placehold.co/32x32/64ffda/0f172a?text=GS" type="image/png">
+    <link rel="shortcut icon" href="https://placehold.co/32x32/64ffda/0f172a?text=GS" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2d9a66b57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="pageHeader">
+        <div class="brand">Gaurav S.</div>
+        <nav aria-label="Main Navigation">
+            <a href="#home" aria-label="Navigate to Home section">Home</a>
+            <a href="#about" aria-label="Navigate to About section">About</a>
+            <a href="#education" aria-label="Navigate to Education section">Education</a>
+            <a href="#projects" aria-label="Navigate to Projects section">Projects</a>
+            <a href="#contact" aria-label="Navigate to Contact section">Contact</a>
+            <button class="theme-toggle" aria-label="Toggle between light and dark themes" title="Toggle Theme">
+                <i class="fas fa-moon" id="theme-icon-moon"></i>
+                <i class="fas fa-sun" id="theme-icon-sun" style="display:none;"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Hello, I'm Gaurav Somnathe</h1>
+            <p>Full Stack MERN Developer | Fitness Creator | Speaker</p>
+            <p>Welcome to my professional portfolio. I specialize in developing modern, scalable web applications and empowering the dev community through mentoring. Let's build something amazing together!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I’m a passionate full-stack web developer who builds responsive, accessible, and high-performance web apps. I've mentored 200+ students, and I regularly share coding tips and developer insights. Beyond coding, I create fitness content as **@fitw.ithgaurav** on Instagram & YouTube, promoting wellness and strength training.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>B.E. in Computer Engineering</h3>
+                <p>BDCE Sewagram | 2020–2024</p>
+                <p>CGPA: 8.7</p>
+                <p>Certifications: Cloud Computing (NPTEL)</p>
+                <p><strong>Key Achievements:</strong> Dean's List for academic excellence (all semesters), Led a team project on AI-driven data analysis, Participated in various coding competitions.</p>
+                <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Management Systems, Web Technologies, Operating Systems.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>Munchkin Preschool Website</h3>
+                <p>Modern, responsive preschool website built with HTML, CSS & JavaScript.</p>
+                <a href="https://github.com/Gauravsomnathe/munchkin-preschool" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="card">
+                <h3>Road Lane Detection</h3>
+                <p>OpenCV-based computer vision project to detect lane lines in video feeds.</p>
+                <a href="https://github.com/Gauravsomnathe/road-lane-detection" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="card">
+                <h3>Node.js API Suite</h3>
+                <p>RESTful APIs for Attendance, Blog, Contact, Inventory using Node.js & MySQL.</p>
+                <a href="https://github.com/Gauravsomnathe/node-api-projects" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="card">
+                <h3>E-commerce Platform (MERN)</h3>
+                <p>Full-stack e-commerce solution with user authentication, product management, and payment integration.</p>
+                <a href="https://github.com/Gauravsomnathe/ecommerce-mern-stack" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="card">
+                <h3>Real-time Chat Application</h3>
+                <p>A real-time chat application built with Node.js, Express, and Socket.IO.</p>
+                <a href="https://github.com/Gauravsomnathe/realtime-chat-app" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Full Name" required aria-label="Your Name">
+                <input type="email" name="email" placeholder="Your Email Address" required aria-label="Your Email Address">
+                <textarea name="message" rows="5" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div id="formSubmissionMessage" class="form-message" style="display: none;"></div>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:gauravsomnathe992@gmail.com">gauravsomnathe992@gmail.com</a> | <i class="fas fa-phone"></i> <a href="tel:+917028439141">+91 7028439141</a></p>
+                <p>
+                    <i class="fab fa-instagram"></i> <a href="https://instagram.com/fitw.ithgaurav" target="_blank" rel="noopener noreferrer">@fitw.ithgaurav</a> |
+                    <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/gauravsomnathe" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+                    <i class="fab fa-github"></i> <a href="https://github.com/Gauravsomnathe" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Gaurav Somnathe. All rights reserved. Built with <i class="fas fa-heart" style="color: #ff6b6b; margin: 0 4px;"></i> & Code.</p>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top of page" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+   <script src="script.js"></script>
+</body>
+</html>
