@@ -1,5 +1,8 @@
 # Internship-task-1
+<<<<<<< HEAD
 
+=======
+>>>>>>> c41a34542a04a26cc65048f6e0292945540c568a
 A simple, responsive stopwatch web application built with **HTML**, **CSS**, and **JavaScript**.
 
 ## 🚀 Features
@@ -13,4 +16,8 @@ A simple, responsive stopwatch web application built with **HTML**, **CSS**, and
 
 - HTML5
 - CSS3
+<<<<<<< HEAD
 - JavaScript 
+=======
+- JavaScript 
+>>>>>>> c41a34542a04a26cc65048f6e0292945540c568a
